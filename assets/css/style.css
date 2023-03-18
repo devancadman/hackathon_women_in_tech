@@ -80,7 +80,48 @@ body {
 
 .main-container {
     flex-grow: 1;
+    margin: 20px 0;
 }
+
+.main-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-inline:auto;
+    text-align: center;
+}
+
+.main-description {
+    margin: 20px 0;
+    font-family: Calibri, serif;
+    font-size: 1.5rem;
+    font-style: oblique;
+    padding: 0 30px;
+}
+
+.main-image-section {
+    margin: 20px 0;
+}
+.main-image-section img {
+    margin-inline: auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.section-youtube-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    width: 80%;
+    margin-inline: auto;
+}
+
 
 footer {
     height: 150px;
