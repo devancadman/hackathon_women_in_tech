@@ -120,14 +120,21 @@ body {
 
 .section-youtube-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px 20px;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 5px 50px;
     grid-auto-flow: row;
-    justify-items: center;
-    width: 80%;
-    margin-inline: auto;
+     justify-content: center;
+
+    /*margin-inline: auto;*/
 }
 
+.youtube-container {
+    /*width: 300px;*/
+}
+.youtube-container iframe {
+    width: 300px;
+    height: auto;
+}
 
 footer {
     height: 150px;
