@@ -83,6 +83,12 @@ body {
     margin: 20px 0;
 }
 
+.main-container p {
+    font-size: xx-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align:center;
+}
+
 .main-container h1 {
     font-size: 2rem;
     font-weight: 700;
