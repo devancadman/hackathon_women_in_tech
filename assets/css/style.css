@@ -85,14 +85,14 @@ body {
 
 .main-container p {
     font-size: xx-large;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
-    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align: center;
 }
 
 .main-container h1 {
     font-size: 2rem;
     font-weight: 700;
-    margin-inline:auto;
+    margin-inline: auto;
     text-align: center;
 }
 
@@ -107,6 +107,7 @@ body {
 .main-image-section {
     margin: 20px 0;
 }
+
 .main-image-section img {
     margin-inline: auto;
 }
@@ -120,14 +121,45 @@ body {
 
 .section-youtube-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 5px 50px;
     grid-auto-flow: row;
-    justify-items: center;
-    width: 80%;
-    margin-inline: auto;
+    justify-content: center;
+
+    /*margin-inline: auto;*/
 }
 
+.youtube-container {
+    /*width: 300px;*/
+}
+
+.youtube-container iframe {
+    width: 300px;
+    height: auto;
+}
+
+.testimonials-section {
+    margin: 50px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.testimonial {
+    width: 300px;
+}
+.testimonial h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.testimonial p {
+    margin-top: 30px;
+    text-align: justify;
+    margin-inline: auto;
+}
 
 footer {
     height: 150px;
@@ -135,10 +167,15 @@ footer {
     display: flex;
 
 }
+
 .footer-section-one {
     flex-basis: 20%;
-}.footer-section-two {
+}
+
+.footer-section-two {
     flex-grow: 1;
-}.footer-section-three {
+}
+
+.footer-section-three {
     flex-basis: 20%;
 }
