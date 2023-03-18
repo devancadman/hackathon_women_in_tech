@@ -43,7 +43,7 @@ input::-ms-clear {
 
 /*variables*/
 :root {
-    --nav-background-color: aqua;
+    --nav-background-color: #fff5ee;
 }
 
 
@@ -70,7 +70,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: chartreuse;
+    
 }
 
 .nav-item {
@@ -131,7 +131,7 @@ body {
 
 footer {
     height: 150px;
-    background-color: aqua;
+    background-color: #fff5ee;
     display: flex;
 
 }
