@@ -1,3 +1,97 @@
+/* Reset and base styles  */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+
+    padding-left: 0;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form */
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+
+/*variables*/
+:root {
+    --nav-background-color: aqua;
+}
+
+
+/*Main styles*/
 body {
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100dvh;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: var(--nav-background-color);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: chartreuse;
+}
+
+.nav-item {
+    width: fit-content;
+
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+footer {
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+
+}
+.footer-section-one {
+    flex-basis: 20%;
+}.footer-section-two {
+    flex-grow: 1;
+}.footer-section-three {
+    flex-basis: 20%;
 }
