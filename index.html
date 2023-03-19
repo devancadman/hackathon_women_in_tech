@@ -13,27 +13,36 @@
 <body>
     <nav class="header">
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#">Link 1</a></li>
+            <li class="nav-item"><a href="#testimonials">testimonials</a></li>
             <li class="nav-item"><a href="#">Link 2</a></li>
 
-            <li class="nav-logo"><a href="/"></li>
-            <li class="nav-item"><a href="#">Link 3</a></li>
-            <li class="nav-item"><a href="#">Link 4</a></li>
+            <li class="nav-logo"><a href="/"><img src="assets/images/logo.png" alt=""></a></li>
+            <li class="nav-item"><a href="#resources_to_help">We are here to help</a></li>
+            <li class="nav-item"><a href="#spotify">Listen to us on Spotify!</a></li>
         </ul>
     </nav>
 
-    <div class="main-container">
+<div class="main-container">
+    <section id="home">
+        <h1 class="main-title">Impostor Syndrome</h1>
 
+        <p class="main-description">Involves feelings of self-doubt and personal incompetence that persist despite your
+            education, experience, and accomplishments. To counter these feelings, you might end up working harder and
+            holding yourself to ever higher standards </p>
+
+
+
+    </section>
         <section class="main-image-section">
             <img src="/assets/images/hacking_the_imposter_main_img.png" alt="Image displaying struggle with the imposter syndrome">
         </section>
 
 
-        <section class="youtube">
+        <section class="youtube" id="resources_to_help">
             <div class="title">
                 <span>Resources to help</span>
             </div>
-            <!--        TODO: update links for youtube wideos -->
+
             <div class="section-youtube-wrapper">
                 <div class="youtube-container">
                     <div class="video-title">Michelle Obama explains imposter syndrome</div>
@@ -41,26 +50,26 @@
                     </iframe>
                 </div>
                 <div class="youtube-container">
-                    <div class="video-title">Video name</div>
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <div class="video-title">You are not FAKE!</div>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/whyUPLJZljE">
                     </iframe>
                 </div>
                 <div class="youtube-container">
-                    <div class="video-title">Video name</div>
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <div class="video-title">Never give up!</div>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ">
                     </iframe>
                 </div>
 
-            </div>
+        </div>
 
 
-        </section>
-    </div>
+    </section>
+</div>
 
     <hr class="separator">
 
     <!-- Podcast Section -->
-    <section>
+    <section id="spotify">
         <!-- Title -->
         <div class="title">
             <span>Spotify</span>
@@ -80,7 +89,7 @@
             </p>
         </div>
         <!-- Spotify Player -->
-        <div class="spotify-player-container">
+        <div class="spotify-player-container" >
             <iframe class="spotify-player"
                 src="https://open.spotify.com/embed/episode/5wsRDNK4rDEIZjbk9AioAV?utm_source=generator"
                 frameBorder="0" allowfullscreen=""
@@ -96,7 +105,8 @@
 
     <hr class="separator">
 
-    <section>
+    <section id="testimonials">
+        <h2 class="title">Testimonials</h2>
         <div class="testimonials-section">
             <div class="testimonial">
                 <img src="assets/images/jk_rowling_1.png" alt="Jk  Rowling">
@@ -113,7 +123,7 @@
 
             </div>
             <div class="testimonial">
-                <img src="assets/images/opray_winfrey_1.png" alt="Opray winfrey">
+                <img src="assets/images/opray_winfrey_1.png" alt="Opray Winfrey">
                 <h2>Opray Winfrey</h2>
                 <p>It doesn't matter who you are, where you come from. The ability to triumph begins with you.</p>
 
@@ -124,40 +134,36 @@
 
     </section>
 
-    <footer>
-        <div class="footer-section-one">
-            <div class="section-header">About the team</div>
-            <div class="section-content">
-                <ul>
-                    <li>Alex</li>
-                    <li>Juan</li>
-                    <li>Phill</li>
-                    <li>Devan</li>
-                    <li>Jonatan</li>
-                    <li>Patricia</li>
-                    <li>Louise</li>
-                </ul>
-            </div>
+<footer id="team">
+    <div class="footer-section-one">
+        <div class="section-header">About the team</div>
+        <div class="section-content">
+            <ul>
+                <li>Alex</li>
+                <li>Juan</li>
+                <li>Phill</li>
+                <li>Devan</li>
+                <li>Patricia</li>
+            </ul>
         </div>
-        <div class="footer-section-two">
-            <div class="section-header">Section header</div>
-            <div class="section-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dignissimos ea
-                    facere hic modi natus nemo, optio pariatur perferendis quas quasi, quis reiciendis
-                </p>
-            </div>
+    </div>
+    <div class="footer-section-two">
+        <div class="section-header">Section header</div>
+        <div class="section-content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dignissimos ea
+            facere hic modi natus nemo, optio pariatur perferendis quas quasi, quis reiciendis
+        </p>
         </div>
-        <div class="footer-section-three">
-            <div class="section-header">Section Header</div>
-            <div class="section-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad
-                    adipisci aut autem
-                </p>
-            </div>
+    </div>
+    <div class="footer-section-three">
+        <div class="section-header">Section Header</div>
+        <div class="section-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad
+                adipisci aut autem
+            </p>
+        </div>
 
-        </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
+    </div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
