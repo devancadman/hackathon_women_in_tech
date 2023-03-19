@@ -65,6 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    background-color: var(--nav-background-color);
     background: url(../images/hack_the_imposter__img_only.png);
     background-repeat: no-repeat;
 }
@@ -337,21 +338,89 @@ body {
 
 
 footer {
-    height: 150px;
-    background: url(../images/footer_img.png);
+    height: 100%;
     display: flex;
-    border-radius: 5%;
-
+    background: linear-gradient(58deg,
+     rgba(131, 58, 180, 1) 0%,
+     rgba(253, 29, 29, 1) 50%,
+     rgba(252, 176, 69, 1) 100%);
 }
 
-.footer-section-one {
-    flex-basis: 20%;
+.container {
+    margin: 20px 40px ;
+    color: #fff5ee;
 }
 
-.footer-section-two {
-    flex-grow: 1;
+.heading {
+    font-size: 40px;
+    color: #fff5ee;
+    text-align: center;
 }
 
-.footer-section-three {
-    flex-basis: 20%;
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profile .profile-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 25px rgb(242, 236, 236));
+    cursor: pointer;
+    transition: 300ms;
+}
+.profile:hover {
+    filter: grayscale(0);
+}
+
+.user-name {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.profile h5 {
+    font-size: 18px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+    color: #672f67;
+}
+.profile p {
+    font-size: 16px;
+    margin-top: 10px;
+    
+    text-align: justify;
+}
+
+@media only screen and (max-width:1150px) {
+    .profiles {
+        flex-direction: column;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile p {
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .heading {
+        font-size: 40px;
+        text-align: center;
+    }
+    .profiles {
+        margin: 20px 0;
+    }
+    .profile p {
+        margin: 20px 10px 80px 10px;
+    }
 }

@@ -7,4 +7,8 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+<<<<<<< HEAD
+.DS_Store
+=======
 .idea
+>>>>>>> 4b7d23b6723c146666c5475871312377fb539af9
