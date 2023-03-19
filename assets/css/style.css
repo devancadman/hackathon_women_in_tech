@@ -89,6 +89,10 @@ body {
     text-align: center;
 }
 
+.main-container img {
+    width: -webkit-fill-available;
+}
+
 .main-container h1 {
     font-size: 2rem;
     font-weight: 700;
