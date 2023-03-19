@@ -105,6 +105,28 @@ body {
     text-align: center;
 }
 
+.main-imposter {
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.main-imposter p {
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align: center;
+}
+
+.main-imposter img {
+    width: -webkit-fill-available;
+    border-radius: 5%;
+}
+
+.main-imposter h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-inline: auto;
+    text-align: center;
+}
 .main-description {
     margin: 20px 0;
     font-family: Calibri, serif;
