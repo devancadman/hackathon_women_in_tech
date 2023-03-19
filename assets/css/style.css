@@ -108,6 +108,28 @@ body {
     text-align: center;
 }
 
+.main-imposter {
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.main-imposter p {
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align: center;
+}
+
+.main-imposter img {
+    width: -webkit-fill-available;
+    border-radius: 5%;
+}
+
+.main-imposter h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-inline: auto;
+    text-align: center;
+}
 .main-description {
     margin: 20px 0;
     font-family: Calibri, serif;
@@ -216,7 +238,7 @@ body {
     display: flex;
     border: 2px inset black;
     border-radius: 2px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -278,6 +300,41 @@ body {
     margin-inline: auto;
     text-align: center;
 }
+
+
+@media (max-width: 991px) {
+    .testimonial {
+        margin: 10px;
+    }
+
+    .testimonials-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        vertical-align: middle;
+    }
+
+    .picture-and-name {
+        width: 40%;
+        margin: auto;
+        display: inline-table;
+        text-align: center;
+    }
+
+    .testimonials-section p {
+        width: 50%;
+        display: inline-block;
+        padding-left: 10px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .testimonial-right {
+        left: auto;
+    }
+}
+
 
 footer {
     height: 150px;
