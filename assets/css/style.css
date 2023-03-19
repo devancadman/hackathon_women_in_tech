@@ -56,16 +56,15 @@ body {
 }
 
 
-
-
 .nav-menu {
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background-color: var(--nav-background-color);
-    background: url(../images/imposter_header_img.png);
-    background-size: cover;
+    background: url(../images/hack_the_imposter__img_only.png);
+    background-repeat: no-repeat;
 }
 
 .nav-logo {
