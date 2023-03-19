@@ -56,8 +56,6 @@ body {
 }
 
 
-
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -75,7 +73,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    
+
 }
 
 .nav-item {
@@ -96,7 +94,7 @@ body {
 
 .main-container img {
     width: -webkit-fill-available;
-    border-radius: 5%;;
+    border-radius: 5%;
 }
 
 .main-container h1 {
@@ -114,8 +112,56 @@ body {
     padding: 0 30px;
 }
 
-.main-image-section {
-    margin: 20px 0;
+.main-section {
+    color: seashell;
+    position: relative;
+    height: 30em;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(58deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    display: flex;
+    padding: 0 20px;
+}
+
+
+.main-section h1 {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 5rem;
+    width: 30rem;
+}
+
+.main-section p {
+    position: absolute;
+    bottom: 2em;
+    right: 1em;
+    font-size: 3rem;
+    width: 44%;
+}
+
+
+@media (max-width: 40em) {
+    .main-section {
+        height: 25em;
+    }
+    .main-section h1 {
+        top: 1em;
+        left: unset;
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section p {
+        text-align: center;
+        bottom: 3em;
+        right: unset;
+        left: 0;
+        font-size: 2rem;
+        width: 100%;
+
+    }
 }
 
 .main-image-section img {
@@ -168,7 +214,7 @@ body {
 
 .spotify-player {
     width: 100%;
-    border-radius:12px;
+    border-radius: 12px;
     height: 352px;
     margin-top: 10px;
 }
@@ -194,12 +240,14 @@ body {
 .testimonial {
     width: 300px;
 }
+
 .testimonial h2 {
     margin-top: 15px;
     text-align: center;
     font-weight: 700;
     font-size: 1.5rem;
 }
+
 .testimonial p {
     margin-top: 30px;
     text-align: justify;
