@@ -53,9 +53,11 @@ body {
     flex-direction: column;
     align-content: space-between;
     height: 100dvh;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
-
+/* 
 .nav-menu {
     height: 100vh;
     width: 100%;
@@ -81,11 +83,12 @@ body {
 .nav-item {
     width: fit-content;
 
-}
+} */
 
 .main-container {
     flex-grow: 1;
-    margin: 20px 0;
+    /*margin: 20px 0;*/
+
 }
 
 .main-container p {
@@ -96,7 +99,7 @@ body {
 
 .main-container img {
     width: -webkit-fill-available;
-    border-radius: 5%;
+    /*border-radius: 5%;*/
 }
 
 .main-container h1 {
@@ -106,6 +109,28 @@ body {
     text-align: center;
 }
 
+.main-imposter {
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+.main-imposter p {
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    text-align: center;
+}
+
+.main-imposter img {
+    width: -webkit-fill-available;
+    border-radius: 5%;
+}
+
+.main-imposter h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-inline: auto;
+    text-align: center;
+}
 .main-description {
     margin: 20px 0;
     font-family: Calibri, serif;
@@ -122,9 +147,18 @@ body {
     background: rgb(131, 58, 180);
     background: linear-gradient(58deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     display: flex;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
+.main-image {
+    position: relative;
+    left: 50%;
+}
+
+.main-image img {
+    height: 20em;
+
+}
 
 .main-section h1 {
     position: absolute;
@@ -147,6 +181,7 @@ body {
     .main-section {
         height: 25em;
     }
+
     .main-section h1 {
         top: 1em;
         left: unset;
@@ -162,6 +197,16 @@ body {
         left: 0;
         font-size: 2rem;
         width: 100%;
+    }
+
+    .main-image {
+        position: relative;
+        left: 10%;
+        top: 25%;
+    }
+
+    .main-image img {
+        height: 10em;
 
     }
 }
@@ -194,7 +239,7 @@ body {
     display: flex;
     border: 2px inset black;
     border-radius: 2px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -256,7 +301,42 @@ body {
     margin-inline: auto;
     text-align: center;
 }
- /* FOOTER CSS SECTION */
+
+
+@media (max-width: 991px) {
+    .testimonial {
+        margin: 10px;
+    }
+
+    .testimonials-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        vertical-align: middle;
+    }
+
+    .picture-and-name {
+        width: 40%;
+        margin: auto;
+        display: inline-table;
+        text-align: center;
+    }
+
+    .testimonials-section p {
+        width: 50%;
+        display: inline-block;
+        padding-left: 10px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .testimonial-right {
+        left: auto;
+    }
+}
+
+
 footer {
     height: 100%;
     display: flex;
