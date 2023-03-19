@@ -55,12 +55,17 @@ body {
     height: 100dvh;
 }
 
+
+
+
 .nav-menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
     background-color: var(--nav-background-color);
+    background: url(../images/imposter_header_img.png);
+    background-size: cover;
 }
 
 .nav-logo {
@@ -203,8 +208,9 @@ body {
 
 footer {
     height: 150px;
-    background-color: #fff5ee;
+    background: url(../images/footer_img.png);
     display: flex;
+    border-radius: 5%;
 
 }
 
