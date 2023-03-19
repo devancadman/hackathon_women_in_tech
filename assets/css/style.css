@@ -91,6 +91,7 @@ body {
 
 .main-container img {
     width: -webkit-fill-available;
+    border-radius: 5%;;
 }
 
 .main-container h1 {
