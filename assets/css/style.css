@@ -132,7 +132,41 @@ body {
 /* .youtube-container {
     /*width: 300px;*/
 
+.separator {
+    display: flex;
+    border: 2px inset black;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.spotify-player-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.spotify-description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.spotify-player {
+    width: 100%;
+    border-radius:12px;
+    height: 352px;
+    margin-top: 10px;
+}
+
+.spotify-link {
+    display: flex;
+    justify-content: center;
+}
 
 .youtube-container iframe {
     width: 300px;
