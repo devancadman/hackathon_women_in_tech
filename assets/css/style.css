@@ -298,7 +298,6 @@ a:hover{
 
 @media (max-width: 991px) {
     .youtube .section-youtube-wrapper {
-        grid-template-rows: repeat(3, 250px);
         grid-template-columns: none;
     }
 }
@@ -342,11 +341,6 @@ a:hover{
 .spotify-link {
     display: flex;
     justify-content: center;
-}
-
-.youtube-container iframe {
-    width: 300px;
-    height: auto;
 }
 
 #testimonials {
@@ -504,5 +498,17 @@ footer {
     }
     .grid, .spotify-section {
         grid-template-columns: 1fr;;
+    }
+    .speech-bubble {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .spotify-section {
+        padding: 3rem 0
+    }
+    .spotify-section:nth-child(2) .media-section, 
+    .spotify-section:nth-child(4) .media-section {
+        order: 2;
     }
 }
