@@ -120,7 +120,7 @@ body {
 }
 
 .main-image {
-    position: relative;
+    position: sticky;
     left: 50%;
 }
 
@@ -178,8 +178,9 @@ body {
     }
 }
 
-.main-image-section img {
+.main-image img {
     margin-inline: auto;
+    object-fit: scale-down;
 }
 
 .title {
@@ -187,8 +188,16 @@ body {
     font-weight: 700;
     margin-inline: auto;
     text-align: center;
+    margin-bottom: 30px;
 }
 
+
+@media (max-width: 991px) {
+    .youtube .section-youtube-wrapper {
+        grid-template-rows: repeat(3, 250px);
+        grid-template-columns: none;
+    }
+}
 .section-youtube-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 300px);
