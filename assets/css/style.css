@@ -79,10 +79,10 @@ a:hover{
     position: relative;
 }
 .speech-bubble {    
-    max-height: 200px;
+    max-height: 25vh;
     position: absolute;
-    right: 5rem;
-    top: 5rem;
+    right: 2rem;
+    top: 8.5rem;
 }
 .logo{
     padding: 0;
@@ -520,6 +520,7 @@ footer {
         position: relative;
         right: 0;
         top: 0;
+        margin:0 auto;
     }
     .spotify-section {
         padding: 3rem 0
