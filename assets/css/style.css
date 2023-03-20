@@ -313,9 +313,6 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.youtube-container:first-child {
-    margin-bottom: 25px;
-}
 #spotify {
     padding: 3rem 0;
 }
