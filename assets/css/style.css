@@ -91,7 +91,7 @@ body {
     /*border-radius: 5%;*/
 }
 
-.main-container h1 {
+.main-container h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-inline: auto;
@@ -114,7 +114,7 @@ body {
     border-radius: 5%;
 }
 
-.main-imposter h1 {
+.main-imposter h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-inline: auto;
@@ -147,7 +147,7 @@ body {
     height: 20em;
 }
 
-.main-section h1 {
+.main-section h2 {
     position: absolute;
     top: 1em;
     left: 1em;
@@ -168,7 +168,7 @@ body {
         height: 25em;
     }
 
-    .main-section h1 {
+    .main-section h2 {
         top: 1em;
         left: unset;
         font-size: 3rem;
@@ -186,9 +186,8 @@ body {
     }
 
     .main-image {
-        position: relative;
-        left: 10%;
-        top: 25%;
+        position: sticky;
+        margin-top: 100px;
     }
 
     .main-image img {
@@ -373,9 +372,9 @@ footer {
 
 .profile h5 {
     font-size: 18px;
-    font-weight: 100px;
+    font-weight: 100;
     letter-spacing: 2px;
-    color: #672f67;
+    color: #83f1fb;
 }
 .profile p {
     font-size: 16px;
