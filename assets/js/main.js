@@ -47,16 +47,16 @@ myCarousel.addEventListener('slid.bs.carousel', function() {
 /* Source - https://stackoverflow.com/questions/14004117/create-div-and-append-div-dynamically*/
 window.addEventListener('load', function() {
   /*Add back to top button*/
-  const toastBackToTop = document.createElement('div');
-  toastBackToTop.classList.add('back-to-top');
-  document.body.appendChild(toastBackToTop);
+  const BackToTop = document.createElement('div');
+  BackToTop.classList.add('back-to-top');
+  document.body.appendChild(BackToTop);
 
   /* Show and hide button based on scroll location - Source: https://stackoverflow.com/questions/28547200/show-hide-menu-based-on-scroll-position & https://codepen.io/matthewcain/pen/ZepbeR*/
   window.addEventListener('scroll', function() {
       if (window.pageYOffset > 20) {
-          toastBackToTop.classList.add('show');
+          BackToTop.classList.add('show');
       } else {
-          toastBackToTop.classList.remove('show');
+          BackToTop.classList.remove('show');
       }
   });
 
@@ -69,3 +69,28 @@ window.addEventListener('load', function() {
           });
       }
   });
+
+  /*Scroll to anchor when clicking a button with an anchor - helpfull ref: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link & https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2*/
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  for (let i = 0; i < anchorLinks.length; i++) {
+      anchorLinks[i].addEventListener('click', function(event) {
+          const link = event.target.getAttribute('href');
+          if (link.indexOf('#') > -1) {
+              const rawLink = link.split('#')[0];
+              const hash = link.split('#')[1];
+              const pageUrl = window.location.href.split('#')[0];
+              if (rawLink == pageUrl || rawLink == '') {
+                  event.preventDefault();
+                  const targetElement = document.getElementById(hash);
+                  if (targetElement) {
+                      const hashPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                      window.scrollTo({
+                          top: hashPosition,
+                          behavior: 'smooth'
+                      });
+                  }
+              }
+          }
+      });
+  }
+});
