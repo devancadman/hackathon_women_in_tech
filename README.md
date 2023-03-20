@@ -1,7 +1,9 @@
 # Hacking The Imposter
 
-![Am I responsive](docs/readme/am-i-responsive.png)
+![Am I responsive](./assets/images/am_i_responsive_img.png)
 
+
+[Hacking The Imposter](https://phillywhitty.github.io/hackathon_women_in_tech/) is designed as a soothing solution for women who tend to suffer from imposter syndrome. Its goal is to reduce such negative effects for women suffering from this mindset condition. We wanted to represent inspiration througout the browser using inspirational quotes from celebrity figures and to also capture a great visual look.
 ## User Experience (UX)
 
 ---
@@ -9,16 +11,24 @@
 -   ### User stories
 
     -   #### As a user I need to
-        - I need to find video sources to fight Impostor Syndrome.
-        - I need to find a podcast that I can listen to deal with the Impostor Syndrome.
-        - I need inspirational quotes.
+        - Women who want a solution to impostor syndrome.
+        - Women who like to listen to podcasts
+        - Women who like to watch videos to lift their mood
+        - Women who are interested in finding peace and a sense of calmness
+
 
 -   ### Design
     -   #### Colour Scheme
-        The main colours used throughout the page are white, pink and orange. This was made to maintain a relaxing  environment that will soothe the users while they tackle the Impostor Syndrome.
+        We wanted the site to contain colors that attract women but to be also very basic to highlight our illustation and images.
     
     -   #### Imagery
-        -   Images of women smilling were used to symbolize a confident state of mind and celebreties were portrayed along their quotes to cement the idea of beating the Impostor Syndrome
+ <div align="center">
+  <img src="./assets/images/images_readme.png" alt="Images">
+</div>
+
+- The site has a heavy focus on image use, using full-size quality images for exhibition purposes.
+- The images will automatically space themselves vertically for responsiveness.
+
     
 -   ### Wireframes
    
@@ -29,7 +39,7 @@
 ---
 
 -  ### Features
-    - Header with inspirational message.
+    - Header with main text.
     - Youtube videos providing techniques and help to combat impostor syndrome.
     - Spotify section with hosts debating around the topic of impostor syndrome.
     - Testimonials and inspirational quotes from celebrities.
@@ -43,6 +53,7 @@
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [Javascript]
 
 ### Frameworks, Libraries & Programs Used
 
@@ -75,23 +86,11 @@ The W3C Markup Validator, and W3C CSS Validator Services were used to validate a
     >   Document checking completed. No errors or warnings to show.
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
     >   Congratulations! No Error Found.
+-  Each javascript file was tested on the site for errors and functionality using the console and with [JSHint]
 
 ### Testing User Stories from User Experience (UX) Section
 
 ---
-
--   #### As a user I need to:
-
-    - I need to find sources to fight impostor syndrome.
-        > I can watch 3 different youtube videos that can help me.
-
-    - I need to find a podcast that I can listen to deal with the Impostor Syndrome.
-        > I can listen to one of the episodes of the Impostor Syndrome Files and also access their whole content with the link below.
-    
-    - I need inspirational quotes.
-        > I can find inspirational quotes from people from all walks of life.
-
-## Deployment
 
 ---
 
