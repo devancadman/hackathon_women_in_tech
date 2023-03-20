@@ -302,7 +302,6 @@ a:hover{
 
 @media (max-width: 991px) {
     .youtube .section-youtube-wrapper {
-        grid-template-rows: repeat(3, 250px);
         grid-template-columns: none;
     }
 }
@@ -348,11 +347,6 @@ a:hover{
     justify-content: center;
 }
 
-.youtube-container iframe {
-    width: 300px;
-    height: auto;
-}
-
 #testimonials {
     padding: 3rem 0;
     background: var(--blue);
@@ -378,7 +372,6 @@ a:hover{
 
 .testimonial p {
     margin-top: 30px;
-    text-align: justify;
     margin-inline: auto;
     text-align: center;
     font-size: 24px;
@@ -387,6 +380,7 @@ a:hover{
 @media (max-width: 991px) {
     .testimonial {
         margin: 10px;
+        width: 100%;
     }
 
     .testimonials-section {
@@ -399,12 +393,10 @@ a:hover{
     .picture-and-name {
         width: 40%;
         margin: auto;
-        display: inline-table;
         text-align: center;
     }
 
     .testimonials-section p {
-        width: 50%;
         display: inline-block;
         padding-left: 10px;
         text-align: center;
@@ -466,7 +458,7 @@ footer {
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
-    color: #83f1fb;
+    color: #fff;
 }
 .profile p {
     font-size: 16px;
@@ -506,7 +498,25 @@ footer {
     .profile p {
         margin: 20px 10px 80px 10px;
     }
-    .grid, .spotify-section {
+    .grid, .spotify-section, .profiles {
         grid-template-columns: 1fr;;
+    }
+    .speech-bubble {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    .spotify-section {
+        padding: 3rem 0
+    }
+    .spotify-section:nth-child(2) .media-section, 
+    .spotify-section:nth-child(4) .media-section {
+        order: 2;
+    }
+    .profile .profile-img {
+        filter: none;
+    }
+    .profile h5 {
+        font-weight: 500;
     }
 }
