@@ -368,7 +368,6 @@ a:hover{
 
 .testimonial p {
     margin-top: 30px;
-    text-align: justify;
     margin-inline: auto;
     text-align: center;
     font-size: 24px;
@@ -495,7 +494,7 @@ footer {
     .profile p {
         margin: 20px 10px 80px 10px;
     }
-    .grid, .spotify-section {
+    .grid, .spotify-section, .profiles {
         grid-template-columns: 1fr;;
     }
     .speech-bubble {
@@ -509,5 +508,11 @@ footer {
     .spotify-section:nth-child(2) .media-section, 
     .spotify-section:nth-child(4) .media-section {
         order: 2;
+    }
+    .profile .profile-img {
+        filter: none;
+    }
+    .profile h5 {
+        font-weight: 500;
     }
 }
