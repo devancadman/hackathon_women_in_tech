@@ -56,26 +56,76 @@ body {
     flex-direction: column;
     align-content: space-between;
     height: 100dvh;
-    max-width: 1800px;
     margin: 0 auto;
+    color: var(--navy);
 }
 
-.navbar-brand img{
-    max-height:150px;
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.navbar-nav .nav-link {
-    color: #fff !important;
-    font-size: 1.1em;
-    background-color:none;
-}
-.navbar .navbar-nav .nav-link:hover{
-    color: var(--orange);
-}
-.navbar-logo-centered .navbar-nav .nav-link{
-    padding: .5em 1em;
+.grid {
+    display: grid;
+    grid-template-columns:1fr 10fr;
+    align-items: center;
 }
 
+a:hover{
+    color: var(--orange) !important;
+}
 
+.main-image-animation {
+    background:radial-gradient(var(--blue),var(--navy));
+    position: relative;
+}
+.logo{
+    padding: 0;
+}
+.logo img{
+    max-height: 150px;
+    width: 100px !important;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.title-header {
+    padding-top: 3rem;
+}
+.main-image-animation h1, .main-image-animation p {
+    color:#fff;
+    text-align: center !important;
+}
+.main-animation-image {
+    margin-bottom: 4rem;
+}
+.carousel-control-next, .carousel-control-prev {
+    z-index:10 !important;
+}
+.carousel-control-next {
+    justify-content: right;
+}
+.carousel-control-prev {
+    justify-content: left;
+}
+.crying, .sad, .slightly-sad, .content, .happy, .very-happy {
+    position: relative;
+}
+.cable, .cable-energy {
+    position:absolute !important;
+    bottom:0;
+    left:0
+}
+.cable {
+    z-index:1;
+}
+.cable-energy {
+    z-index:2;
+    opacity:0;
+}
+.main-animation-image {
+    z-index:5;
+    position: relative;
+}
 .main-container {
     flex-grow: 1;
 }
@@ -99,8 +149,10 @@ body {
 }
 
 .main-imposter {
-    flex-grow: 1;
-    margin: 20px 0;
+    background: var(--orange);
+    color: #fff;
+    margin: 0;
+    padding: 3rem
 }
 
 .main-imposter p {
@@ -162,6 +214,34 @@ body {
     font-size: 3rem;
     width: 44%;
 }
+.video-title {
+    text-align:center;
+    padding-bottom: 1.5rem;
+    font-size: 20px;
+}
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.section-spotify-wrapper p {
+    font-size:18px;
+}
+.spotify-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
 
 @media (max-width: 40em) {
     .main-section {
@@ -222,16 +302,14 @@ body {
     grid-gap: 5px 50px;
     grid-auto-flow: row;
     justify-content: center;
+    align-items: center;
 }
-
-.separator {
-    display: flex;
-    border: 2px inset black;
-    border-radius: 2px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.youtube-container:first-child {
+    margin-bottom: 25px;
 }
-
+#spotify {
+    padding: 3rem 0;
+}
 .spotify-player-container {
     display: block;
     margin-left: auto;
@@ -265,8 +343,12 @@ body {
     height: auto;
 }
 
+#testimonials {
+    padding: 3rem 0;
+    background: var(--blue);
+}
+
 .testimonials-section {
-    margin: 50px 0;
     display: flex;
     align-items: start;
     justify-content: space-evenly;
@@ -289,6 +371,7 @@ body {
     text-align: justify;
     margin-inline: auto;
     text-align: center;
+    font-size: 24px;
 }
 
 @media (max-width: 991px) {
@@ -330,27 +413,26 @@ footer {
      rgba(131, 58, 180, 1) 0%,
      rgba(253, 29, 29, 1) 50%,
      rgba(252, 176, 69, 1) 100%);
-}
-
-.container {
-    margin: 20px 40px ;
-    color: #fff5ee;
+     padding: 3rem 0;
 }
 
 .heading {
     font-size: 40px;
+    margin-bottom: 2rem;
     color: #fff5ee;
     text-align: center;
 }
 
 .profiles {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3rem;
+    text-align: center;
 }
 
 .profile {
     flex-basis: 260px;
+    margin: 0 auto;
 }
 
 .profile .profile-img {
@@ -382,7 +464,12 @@ footer {
     
     text-align: justify;
 }
-
+.github-icon {
+    display:inline-block;
+}
+.github-icon img {
+    height:25px;
+}
 @media only screen and (max-width:1150px) {
     .profiles {
         flex-direction: column;
@@ -408,5 +495,8 @@ footer {
     }
     .profile p {
         margin: 20px 10px 80px 10px;
+    }
+    .grid, .spotify-section {
+        grid-template-columns: 1fr;;
     }
 }

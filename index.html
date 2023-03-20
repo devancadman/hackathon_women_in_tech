@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hacking The Imposter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="assets\images\favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets\images\favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets\images\favicon/favicon-16x16.png">
@@ -18,186 +18,338 @@
     <meta name="msapplication-config" content="assets\images\favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--navy);">
-        <a class="navbar-brand d-lg-none" href="#"><img src="assets/images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
-            aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbarToggler7">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <a class="navbar-brand d-none d-lg-block" href="#"><img src="assets/images/logo.png"></a>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-<div class="main-container">
-    <section class="main-section">
-        <div class="main-image"><img src="assets/images/imposter-image-2.png" alt=""></div>
-        <h2>Hacking The Imposter</h2>
-        <p>Feeding Your Mindset The Right Fuel</p>
-    </section>
-</div>
-
-<div class="main-imposter">
-    <div class="youtube" id="resources_to_help">
-        <div class="title">
-            <span>Resources to help</span>
-        </div>
-        <div class="section-youtube-wrapper">
-            <div class="youtube-container">
-                <div class="video-title">Michelle Obama explains imposter syndrome</div>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/dumm_XfHkmY">
-                </iframe>
+    <main class="main-container">
+        <section class="main-image-animation">
+            <div class="grid">
+                <div class="logo-header">
+                    <a class="logo" href="/index.html"><img src="assets/images/logo.png"></a>
+                </div>
+                <div class="title-header">
+                    <h1>Hacking The Imposter</h1>
+                    <p>Feeding Your Mindset The Right Fuel</p>
+                </div>
             </div>
-            <div class="youtube-container">
-                <div class="video-title">You are not FAKE!</div>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/whyUPLJZljE">
-                </iframe>
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="crying">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="First slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="First slide">
+                                <img class="d-block col main-animation-image" src="assets/images/main-image-animation/Main-image-crying.svg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="sad">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="Second slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="Second slide">
+                                <img class="d-block main-animation-image" src="assets/images/main-image-animation/Main-image-sad.svg" alt="Second slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slightly-sad">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="Third slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="Third slide">
+                                <img class="d-block main-animation-image" src="assets/images/main-image-animation/Main-image-slightly-sad.svg" alt="Third slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="Fourth slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="Fourth slide">
+                                <img class="d-block main-animation-image" src="assets/images/main-image-animation/Main-image-content.svg" alt="Fourth slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="happy">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="Fifth slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="Fifth slide">
+                                <img class="d-block main-animation-image" src="assets/images/main-image-animation/Main-image-happy.svg" alt="Fifth slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="very-happy">
+                                <img class="d-block col cable" src="assets/images/main-image-animation/cable.svg" alt="sixth slide">
+                                <img class="d-block col cable-energy" src="assets/images/main-image-animation/Energy-animation.svg" alt="sixth slide">
+                                <img class="d-block main-animation-image" src="assets/images/main-image-animation/Main-image-very-happy.svg" alt="sixth slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>     
+                </div>
+                <script>
+                    //handle Bootstrap carousel slide event
+                    $(".carousel").attr("data-interval", "100");
+                </script>
             </div>
-            <div class="youtube-container">
-                <div class="video-title">Never give up!</div>
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ">
-                </iframe>
-            </div>
-        </div>
-    </div>
-</div>
+        </section>
 
-<hr class="separator">
-
-<!-- Podcast Section -->
-<div id="spotify">
-    <!-- Title -->
-    <div class="title">
-        <span>Spotify</span>
-    </div>
-    <!-- Description -->
-    <div class="spotify-description">
-        <p>Do you ever feel like a fraud? Are you living with chronic self-doubt? Do you question whether you
-            deserve to be in your role? If so, you're not alone! As a leadership coach and lifelong struggler with
-            impostor syndrome, I wanted to create a space where professionals can tell their personal stories and
-            unburden themselves of the silent shame that comes with this experience. I also wanted listeners to be
-            able to hear themselves in others and realize that they are not alone. On this podcast, we'll share the
-            stories of professionals from different backgrounds who've struggled with and learned to manage impostor
-            syndrome. We'll also learn from experts on how to better manage ourselves and our environments to
-            minimize the overall threat of impostor syndrome. Let's erase the stigma and stop feeling ashamed of
-            these very normal experiences. And let's come together to share our challenges and strategize how to
-            effectively rise above them.
-        </p>
-    </div>
-    <!-- Spotify Player -->
-    <div class="spotify-player-container">
-        <iframe class="spotify-player"
-                src="https://open.spotify.com/embed/episode/5wsRDNK4rDEIZjbk9AioAV?utm_source=generator"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-        </iframe>
-    </div>
-    <div class="spotify-link">
-        <a href="https://open.spotify.com/show/6UiI9aXru2XnnV1fY4gbKA">
-            Listen to us on Spotify!
-        </a>
-    </div>
-</div>
-
-<hr class="separator">
-
-<section id="testimonials">
-    <h2 class="title">Testimonials</h2>
-    <div class="testimonials-section">
-        <div class="testimonial testimonial-left">
-            <div class="picture-and-name">
-                <img src="assets/images/jk_rowling_1.png" alt="Jk Rowling">
-                <h2>Jk Rowling</h2>
-            </div>
-            <p>"It is impossible to live without failing at something, unless you live so cautiously that you might
-                as well not have lived at all, in which case you have failed by default."</p>
-
-        </div>
-        <div class="testimonial testimonial-right">
-            <div class="picture-and-name">
-                <img src="assets/images/michelle_o_bama_1.png" alt="Michelle Obama">
-                <h2>Michelle Obama</h2>
-            </div>
-            <p>"No country can ever truly flourish if it stifles the potential of its women and deprives itself of
-                the contributions of half its citizens."</p>
-        </div>
-        <div class="testimonial testimonial-left">
-            <div class="picture-and-name">
-                <img src="assets/images/opray_winfrey_1.png" alt="Oprah Winfrey">
-                <h2>Oprah Winfrey</h2>
-            </div>
-            <p>"It doesn't matter who you are, where you come from. The ability to triumph begins with you."</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <h1 class="heading">Meet Our Team</h1>
-
-        <div class="profiles">
-            <div class="profile">
-                <img src="assets/images/profile-alex.png" class="profile-img" alt="Alexander's Profile Picture">
-
-                <h3 class="user-name">Alexander Grib</h3>
-                <h5>Student Full Stack WebDeveloper</h5>
-                <p>Acknowledge your thoughts.Impostor syndrome isn’t rational.
-                    You can’t beat it with rational arguments.Name these thoughts. Write them down,
-                    sit with them. Try to cut down on any rationalizations. The truth is you’re not really
-                    a fraud, so there’s no way you can get “found out”.</p>
-            </div>
-
-            <div class="profile">
-                <img src="assets/images/profile-juan.png" class="profile-img" alt="Juan's Profile Picture">
-
-                <h3 class="user-name">Juan Bracho </h3>
-                <h5>Student Full Stack WebDeveloper</h5>
-                <p>Channel your impostor syndrome into leaps of faith.
-                    “Courage is the most important of all the virtues, because without courage
-                    you can’t practice any other virtue consistently. You can practice any virtue erratically,
-                    but nothing consistently without courage.”</p>
-            </div>
-
-            <div class="profile">
-                <img src="assets/images/profile-phil.png" class="profile-img" alt="Phil's Profile Picture">
-
-                <h3 class="user-name">Phil Whitty</h3>
-                <h5>Student Full Stack WebDeveloper</h5>
-                <p>Find something worth being brave for.
-                    “I believe what I have to say is important, and I believe the people coming to
-                    hear me are important, and so the occasion of itself alone has an importance,
-                    which forces me to stare down my nerves.”</p>
-            </div>
-
-            <div class="profile">
-                <img src="assets/images/pattprofile.png" class="profile-img" alt="Patricia's Profile Picture">
-
-                <h3 class="user-name">Patricia Höge</h3>
-                <h5>Student Full Stack WebDeveloper</h5>
-                <p>Appreciate your failures when they happen.“You may encounter many defeats, but you must not be
-                    defeated. In fact,
-                    it may be necessary to encounter the defeats,so you can know who you are,
-                    what you can rise from, how you can still come out of it.”</p>
+        <div class="main-imposter">
+           <div class="container">
+                <section class="youtube" id="resources_to_help">
+                    <div class="title">
+                        <span>Resources to help</span>
+                    </div>
+                    <div class="section-youtube-wrapper">
+                        <div class="youtube-container">
+                            <div class="video-title">Michelle Obama explains imposter syndrome</div>
+                            <div class='embed-container'>
+                                <iframe src='https://www.youtube.com/embed/dumm_XfHkmY' frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="youtube-container">
+                            <div class="video-title">You are not FAKE!</div>
+                            <div class='embed-container'>
+                                <iframe src='https://www.youtube.com/embed/whyUPLJZljE' frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="youtube-container">
+                            <div class="video-title">Never give up!</div>
+                            <div class='embed-container'>
+                                <iframe src='https://www.youtube.com/embed/dQw4w9WgXcQ' frameborder='0' allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </div>
-</footer>
+
+        <!-- Podcast Section -->
+        <section id="spotify">
+            <div class="section-spotify-wrapper">
+                <div class="spotify-section">
+                    <div class="text-section">
+                        <!-- Title -->
+                        <div class="title">
+                            <span>The Creative Impostor</span>
+                        </div>
+                        <!-- Description -->
+                        <div class="spotify-description">
+                            <p>Impostor syndrome. How does it show up for you – self-doubt, hesitation, procrastination, perfectionism, comparison, competition?
+                                Or a little gremlin voice in your head that says, “Who do you think you are? You can’t do THAT!”
+                                
+                                The truth is you have something to share with the world — I just know it! And you know it too, but that gremlin voice keeps you playing small. It’s trying to protect you from the risk of sharing your unique gifts with the world.
+                                
+                                This podcast exists (despite all of my impostor gremlin’s very best efforts) precisely to help you be bold, take action and trust your vision.
+                                
+                                So what are you waiting for? Let’s get started!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-section">
+                        <!-- Spotify Player -->
+                        <div class="spotify-player-container">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4vaI4gUILlWEYd8zCVSJEX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="spotify-link">
+                            <a href="https://open.spotify.com/episode/4vaI4gUILlWEYd8zCVSJEX?si=-NDm5GDPQ7iWb4FO9ILCbg" target="_blank">
+                                Listen to us on Spotify!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotify-section">
+                    <div class="media-section">
+                        <!-- Spotify Player -->
+                        <div class="spotify-player-container">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3sF19nyEhEuBf8fgtBfN2n?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="spotify-link">
+                            <a href="https://open.spotify.com/episode/3sF19nyEhEuBf8fgtBfN2n?si=a9yAIuvSTIOXF4PW-DbnJw" target="_blank">
+                                Listen to us on Spotify!
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-section">
+                        <!-- Title -->
+                        <div class="title">
+                            <span>The Impostor Syndrome Files</span>
+                        </div>
+                        <!-- Description -->
+                        <div class="spotify-description">
+                            <p>In our very first episode of the Impostor Syndrome Files, we discuss the power of regret as we evaluate our options and face our self-doubt. Our guest shares how her commitment to avoiding regret has empowered her to stretch outside her comfort zone and build her confidence along the way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotify-section">
+                    <div class="text-section">
+                        <!-- Title -->
+                        <div class="title">
+                            <span>The Impostor Syndrome Terminator®</span>
+                        </div>
+                        <!-- Description -->
+                        <div class="spotify-description">
+                            <p>Welcome to the very first episode of this podcast. Get to know Ines Padar, the Impostor Syndrome Terminator. Find out how she overcame her limiting beliefs, which led her to build a successful program for her ideal client avatar. If you are on a never-ending mindset rollercoaster and continuously doubting yourself, tune in to this podcast. You won’t want to miss what Ines has to share. Smash that inner critic and unleash your full potential. It all starts right here.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-section">
+                        <!-- Spotify Player -->
+                        <div class="spotify-player-container">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5emPGQ93bIGY5KPWryLLUZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="spotify-link">
+                            <a href="https://open.spotify.com/episode/5emPGQ93bIGY5KPWryLLUZ?si=Yp68cOv-T1idyqdxmDUabQ" target="_blank">
+                                Listen to us on Spotify!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotify-section">
+                    <div class="media-section">
+                        <!-- Spotify Player -->
+                        <div class="spotify-player-container">
+                            <iframe class="spotify-player"
+                                    src="https://open.spotify.com/embed/episode/5wsRDNK4rDEIZjbk9AioAV?utm_source=generator"
+                                    frameBorder="0" allowfullscreen=""
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="spotify-link">
+                            <a href="https://open.spotify.com/show/6UiI9aXru2XnnV1fY4gbKA" target="_blank">
+                                Listen to us on Spotify!
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-section">
+                        <!-- Title -->
+                        <div class="title">
+                            <span>The Impostor Syndrome Files</span>
+                        </div>
+                        <!-- Description -->
+                        <div class="spotify-description">
+                            <p>Do you ever feel like a fraud? Are you living with chronic self-doubt? Do you question whether you
+                                deserve to be in your role? If so, you're not alone! As a leadership coach and lifelong struggler with
+                                impostor syndrome, I wanted to create a space where professionals can tell their personal stories and
+                                unburden themselves of the silent shame that comes with this experience. I also wanted listeners to be
+                                able to hear themselves in others and realize that they are not alone. On this podcast, we'll share the
+                                stories of professionals from different backgrounds who've struggled with and learned to manage impostor
+                                syndrome. We'll also learn from experts on how to better manage ourselves and our environments to
+                                minimize the overall threat of impostor syndrome. Let's erase the stigma and stop feeling ashamed of
+                                these very normal experiences. And let's come together to share our challenges and strategize how to
+                                effectively rise above them.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="title">Testimonials</h2>
+                <div class="testimonials-section">
+                    <div class="testimonial testimonial-left">
+                        <div class="picture-and-name">
+                            <img src="assets/images/jk_rowling_1.png" alt="Jk Rowling">
+                            <h2>Jk Rowling</h2>
+                        </div>
+                        <p>"It is impossible to live without failing at something, unless you live so cautiously that you might
+                            as well not have lived at all, in which case you have failed by default."</p>
+
+                    </div>
+                    <div class="testimonial testimonial-right">
+                        <div class="picture-and-name">
+                            <img src="assets/images/michelle_o_bama_1.png" alt="Michelle Obama">
+                            <h2>Michelle Obama</h2>
+                        </div>
+                        <p>"No country can ever truly flourish if it stifles the potential of its women and deprives itself of
+                            the contributions of half its citizens."</p>
+                    </div>
+                    <div class="testimonial testimonial-left">
+                        <div class="picture-and-name">
+                            <img src="assets/images/opray_winfrey_1.png" alt="Oprah Winfrey">
+                            <h2>Oprah Winfrey</h2>
+                        </div>
+                        <p>"It doesn't matter who you are, where you come from. The ability to triumph begins with you."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h1 class="heading">Meet Our Team</h1>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="assets/images/profile-alex.png" class="profile-img">
+
+                    <h3 class="user-name">Alexander Grid</h3> <a class="github-icon" href="https://github.com/alexandergrib" taget="_blank"><img src="assets/images/github-icon.svg" class="github-icon"></a>
+                    <h5>Student Full Stack WebDeveloper</h5>
+                    <p>Acknowledge your thoughts.Impostor syndrome isn’t rational.
+                        You can’t beat it with rational arguments.Name these thoughts. Write them down,
+                        sit with them. Try to cut down on any rationalizations. The truth is you’re not really
+                        a fraud, so there’s no way you can get “found out”.</p>
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/profile-juan.png" class="profile-img" alt="Juan's Profile Picture">
+
+                    <h3 class="user-name">Juan Bracho </h3> <a class="github-icon" href="https://github.com/JuanBrachoDev" taget="_blank"><img src="assets/images/github-icon.svg" class="github-icon"></a>
+                    <h5>Student Full Stack WebDeveloper</h5>
+                    <p>Channel your impostor syndrome into leaps of faith.
+                        “Courage is the most important of all the virtues, because without courage
+                        you can’t practice any other virtue consistently. You can practice any virtue erratically,
+                        but nothing consistently without courage.”</p>
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/profile-devan.png" class="profile-img" alt="Devan's Profile Picture">
+
+                    <h3 class="user-name">Devan Cadman</h3> <a class="github-icon" href="https://github.com/devancadman" taget="_blank"><img src="assets/images/github-icon.svg" class="github-icon"></a>
+                    <h5>Student Full Stack WebDeveloper</h5>
+                    <p>“The greatest obstacle for me has been the voice in my head that I call my obnoxious roommate. I wish someone would invent a tape recorder that we could attach to our brains to record everything we tell ourselves. We would realize how important it is to stop this negative self-talk. It means pushing back against our obnoxious roommate with a dose of wisdom.”</p>
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/profile-phil.png" class="profile-img">
+
+                    <h3 class="user-name">Phil Whitty</h3> <a class="github-icon" href="https://github.com/phillywhitty/" taget="_blank"><img src="assets/images/github-icon.svg" class="github-icon"></a>
+                    <h5>Student Full Stack WebDeveloper</h5>
+                    <p>Find something worth being brave for.
+                        “I believe what I have to say is important, and I believe the people coming to
+                        hear me are important, and so the occasion of itself alone has an importance,
+                        which forces me to stare down my nerves.”</p>
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/profile-patt.png" class="profile-img" alt="Patricia's Profile Picture">
+
+                    <h3 class="user-name">Patricia Höge</h3> <a class="github-icon" href="https://github.com/patthoege" taget="_blank"><img src="assets/images/github-icon.svg" class="github-icon"></a>
+                    <h5>Student Full Stack WebDeveloper</h5>
+                    <p>Appreciate your failures when they happen.“You may encounter many defeats, but you must not be
+                        defeated. In fact,
+                        it may be necessary to encounter the defeats,so you can know who you are,
+                        what you can rise from, how you can still come out of it.”</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

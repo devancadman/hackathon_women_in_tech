@@ -127,6 +127,8 @@ The project was deployed to [GitHub Pages](https://pages.github.com/) by automat
 
 -   [Juan Bracho](https://github.com/JuanBrachoDev) 
 
+-   [Devan Cadman](https://github.com/devancadman) 
+
 -   [Patricia Höge](https://github.com/patthoege) 
 
 -   [Philip Whitty](https://github.com/phillywhitty) 
