@@ -56,8 +56,12 @@ body {
     flex-direction: column;
     align-content: space-between;
     height: 100dvh;
-    max-width: 1800px;
     margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .navbar-brand img{
@@ -69,13 +73,47 @@ body {
     background-color:none;
 }
 .navbar .navbar-nav .nav-link:hover{
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 }
 
-
+.main-image-animation {
+    background:radial-gradient(var(--blue),var(--navy));
+    position: relative;
+}
+.main-animation-image {
+    margin-bottom: 4rem;
+}
+.carousel-control-next, .carousel-control-prev {
+    z-index:10 !important;
+}
+.carousel-control-next {
+    justify-content: right;
+}
+.carousel-control-prev {
+    justify-content: left;
+}
+.crying, .sad, .slightly-sad, .content, .happy, .very-happy {
+    position: relative;
+}
+.cable, .cable-energy {
+    position:absolute !important;
+    bottom:0;
+    left:0
+}
+.cable {
+    z-index:1;
+}
+.cable-energy {
+    z-index:2;
+    opacity:0;
+}
+.main-animation-image {
+    z-index:5;
+    position: relative;
+}
 .main-container {
     flex-grow: 1;
 }
@@ -333,10 +371,6 @@ footer {
      rgba(252, 176, 69, 1) 100%);
 }
 
-.container {
-    margin: 20px 40px ;
-    color: #fff5ee;
-}
 
 .heading {
     font-size: 40px;
