@@ -97,6 +97,10 @@ a:hover{
 .title-header {
     padding-top: 3rem;
 }
+.title-header h1 {
+   font-size:xx-large;
+}
+
 .main-image-animation h1, .main-image-animation p {
     color:#fff;
     text-align: center !important;
