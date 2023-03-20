@@ -2,6 +2,8 @@
 
 ![Am I responsive](./assets/images/am_i_responsive_img.png)
 
+
+[Hacking The Imposter](https://phillywhitty.github.io/hackathon_women_in_tech/) is designed as a soothing solution for women who tend to suffer from imposter syndrome. Its goal is to reduce such negative effects for women suffering from this mindset condition. We wanted to represent inspiration througout the browser using inspirational quotes from celebrity figures and to also capture a great visual look.
 ## User Experience (UX)
 
 ---
@@ -9,13 +11,15 @@
 -   ### User stories
 
     -   #### As a user I need to
-        - I need to find video sources to fight Impostor Syndrome.
-        - I need to find a podcast that I can listen to deal with the Impostor Syndrome.
-        - I need inspirational quotes.
+        - Women who want a solution to Impostor Syndrome.
+        - Women who like to listen to podcasts
+        - Women who like to watch videos to lift their mood
+        - Women who are interested in finding peace and a sense of calmness
+
 
 -   ### Design
     -   #### Colour Scheme
-        The main colours used throughout the page are white, pink and orange. This was made to maintain a relaxing  environment that will soothe the users while they tackle the Impostor Syndrome.
+        We wanted the site to contain colors that attract women but to be also very basic to highlight our illustation and images.
     
     -   #### Imagery
         -   Images of women smilling were used to symbolize a confident state of mind and celebreties were portrayed along their quotes to cement the idea of beating the Impostor Syndrome
