@@ -459,14 +459,39 @@ footer {
 .profile p {
     font-size: 16px;
     margin-top: 10px;
-    
-    text-align: justify;
 }
 .github-icon {
     display:inline-block;
 }
 .github-icon img {
     height:25px;
+}
+
+/********** BACK TO TOP **********/
+.back-to-top.show {
+    opacity: 1;
+    transform: translatey(0px);
+    pointer-events: all;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--navy);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translatey(-30px);
+    transition: all 1s;
+    background: #fff url('assets/images/chevron-up.svg') no-repeat center / 50% !important;
+    box-shadow: 0 0 0 4px var(--navy), inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
+    z-index: 99;
 }
 @media only screen and (max-width:1150px) {
     .profiles {
