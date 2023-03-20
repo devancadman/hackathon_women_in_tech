@@ -1,6 +1,6 @@
 # Hacking The Imposter
 
-![Am I responsive](docs/readme/am-i-responsive.png)
+![Am I responsive](./assets/images/am_i_responsive_img.png)
 
 ## User Experience (UX)
 
