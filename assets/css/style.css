@@ -377,6 +377,7 @@ a:hover{
 @media (max-width: 991px) {
     .testimonial {
         margin: 10px;
+        width: 100%;
     }
 
     .testimonials-section {
@@ -389,12 +390,10 @@ a:hover{
     .picture-and-name {
         width: 40%;
         margin: auto;
-        display: inline-table;
         text-align: center;
     }
 
     .testimonials-section p {
-        width: 50%;
         display: inline-block;
         padding-left: 10px;
         text-align: center;
