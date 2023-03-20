@@ -81,8 +81,8 @@ a:hover{
 .speech-bubble {    
     max-height: 200px;
     position: absolute;
-    right: -29rem;
-    top: 4rem;
+    right: 5rem;
+    top: 5rem;
 }
 .logo{
     padding: 0;
@@ -144,11 +144,6 @@ a:hover{
     font-size: xx-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
     text-align: center;
-}
-
-.main-container img {
-    width: -webkit-fill-available;
-    /*border-radius: 5%;*/
 }
 
 .main-container h2 {
