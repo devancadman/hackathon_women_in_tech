@@ -72,7 +72,7 @@ body {
     /*border-radius: 5%;*/
 }
 
-.main-container h1 {
+.main-container h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-inline: auto;
@@ -95,7 +95,7 @@ body {
     border-radius: 5%;
 }
 
-.main-imposter h1 {
+.main-imposter h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-inline: auto;
@@ -149,7 +149,7 @@ body {
         height: 25em;
     }
 
-    .main-section h1 {
+    .main-section h2 {
         top: 1em;
         left: unset;
         font-size: 3rem;
@@ -167,9 +167,8 @@ body {
     }
 
     .main-image {
-        position: relative;
-        left: 10%;
-        top: 25%;
+        position: sticky;
+        margin-top: 100px;
     }
 
     .main-image img {
